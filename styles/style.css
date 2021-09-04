@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #1f363d;
+    background-color: #1f363d !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -74,4 +74,8 @@ body{
 }
 .template{
     width: 100%;
+}
+.container h2{
+    color: #cfe0c3;
+    text-align: center;
 }
