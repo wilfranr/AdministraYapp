@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #1f363d !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
 #header{
@@ -79,3 +79,21 @@ body{
     color: #cfe0c3;
     text-align: center;
 }
+.bg-custom, .card-body{
+    background-color: #1f363d;
+}
+.btn-custom{
+    background-color: #40798c !important;
+    color: #cfe0c3 !important;
+}
+.fas.fa-heart:hover {
+    color: #f44336 !important;
+  }
+  
+  .fas.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }
+  .navbar{
+      background-color: #40798c !important;
+      color: #cfe0c3 !important;
+  }
