@@ -97,3 +97,10 @@ body{
       background-color: #40798c !important;
       color: #cfe0c3 !important;
   }
+
+.form-control form-control-lg{
+    background-color: #1f363d !important;
+}
+.form-control{
+    background-color: #1f363d !important;
+}
