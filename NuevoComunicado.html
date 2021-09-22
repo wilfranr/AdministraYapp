@@ -11,6 +11,23 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/scripts/script.js"></script>
 
+    <link rel ="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.min.css" />
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#fecha').datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true
+            });
+        });
+    </script>
+
     <title>AdministraYapp!</title>
 </head>
 
@@ -30,8 +47,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Navbar brand -->
                 <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-                    <img src="/img/logo.png" width="120px" alt=""
-                        loading="lazy" />
+                    <img src="/img/logo.png" width="120px" alt="" loading="lazy" />
                 </a>
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -60,7 +76,7 @@
 
             <!-- Right elements -->
             <div class="d-flex align-items-center">
-                
+
 
                 <!-- Notifications -->
                 <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
@@ -103,77 +119,20 @@
         <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
-    <div class="container mb-5">
-        <h2>COMUNICADOS</h2><br><br>
-        <a href="NuevoComunicado.html"> <button class="btn btn-primary" type="button">Nuevo</button></a><br><br>
-        <div class="row mb-5">
-            <div class="col-3">
-                <img src="/img/tuboRoto.jpeg" alt="" class="img-fuid">
-                <p class="lead text-center text-light">04-septiembre-2021</p>
-            </div>
-            <div class="col-12 col-md-9">
-                <a href="#">
-                    <h3 class="text-light text-decoration-none">
-                        Corte de agua.
-                    </h3>
-                </a>
-                <p class="text-light">Se informa a los residentes que el dia 15 de septiembre se realizará un corte de
-                    agua de 8:00am a 6:00pm para la reparacion de la tubería.</p>
-                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sed voluptatibus
-                    voluptate aspernatur fugit est qui nesciunt obcaecati molestiae perferendis?</p>
-                <a href="#" class="btn btn-light btn-sm">Ver más...</a>
-            </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-3">
-                <img src="/img/tuboRoto.jpeg" alt="" class="img-fuid">
-                <p class="lead text-center text-light">04-septiembre-2021</p>
-            </div>
-            <div class="col-12 col-md-9">
-                <a href="#">
-                    <h3 class="text-light text-decoration-none">
-                        Corte de agua.
-                    </h3>
-                </a>
-                <p class="text-light">Se informa a los residentes que el dia 15 de septiembre se realizará un corte de
-                    agua de 8:00am a 6:00pm para la reparacion de la tubería.</p>
-                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sed voluptatibus
-                    voluptate aspernatur fugit est qui nesciunt obcaecati molestiae perferendis?</p>
-                <a href="#" class="btn btn-light btn-sm">Ver más...</a>
-            </div>
-        </div>
-        <div class="row mb-5">
-            <div class="col-3">
-                <img src="/img/tuboRoto.jpeg" alt="" class="img-fuid">
-                <p class="lead text-center text-light">04-septiembre-2021</p>
-            </div>
-            <div class="col-12 col-md-9">
-                <a href="#">
-                    <h3 class="text-light text-decoration-none">
-                        Corte de agua.
-                    </h3>
-                </a>
-                <p class="text-light">Se informa a los residentes que el dia 15 de septiembre se realizará un corte de
-                    agua de 8:00am a 6:00pm para la reparacion de la tubería.</p>
-                <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sed voluptatibus
-                    voluptate aspernatur fugit est qui nesciunt obcaecati molestiae perferendis?</p>
-                <a href="#" class="btn btn-light btn-sm">Ver más...</a>
-            </div>
-        </div>
-        <div class="btn-toolbar d-flex justify-content-center mb-3" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group me-2" role="group" aria-label="First group">
-              <button type="button" class="btn btn-light">Inicio</button>
-              <button type="button" class="btn btn-light">1</button>
-              <button type="button" class="btn btn-light">2</button>
-              <button type="button" class="btn btn-light">3</button>
-              <button type="button" class="btn btn-light">4</button>
-              <button type="button" class="btn btn-light">Fin</button>
-          </div>
-        </div>
+    <br><br><br>
+
+    <div class="container mb-5 ">
+        <h1 class="text-white text-center">Nuevo Comunicado</h1>
+        <input class="form-control form-control-lg" type="text" placeholder="Titulo"
+            aria-label=".form-control-lg example" style="color:azure"><br>
+        <textarea class="form-control" placeholder="Descripción" id="FormControlTextarea1" rows="5"
+            style="color:azure"></textarea><br><br>
+        <input type="text" id="fecha" name="fecha" placeholder="Fecha" /><br><br>
+        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+            aria-label="Upload" style="color:azure"><br>
+        <a href="index.html" class="btn btn-success btn-lg btn-block" type="button" id="inputGroupFileAddon04"
+            style="color:rgb(255, 255, 255)">Upload</a>
     </div>
-
-
-
 </body>
 
 </html>
