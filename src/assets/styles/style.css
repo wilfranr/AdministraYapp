@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1f363d !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+#header{
+    position: relative;
+    margin-top: 0;
+    height: 60px;
+    background-color: #40798c;
+}
+#userName{
+    text-align: center;
+    position: absolute;
+    left: 550px;
+    top: 20px;
+    color: #cfe0c3;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-btn{
+    padding: 4px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: solid 2px #cfe0c3;
+    background-color: #40798c;
+    color: #cfe0c3;
+    width: 90px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.login .login-btn:hover{
+    background-color: #cfe0c3;
+    color: #40798c;
+}
+#panel{
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 80%;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+.form-login{
+    display: block;
+    position: absolute;
+    right: 0;
+    border: #cfe0c3 solid 3px;
+    width: 210px;
+    color: #cfe0c3;
+    text-align: center;
+}
+.clasificados {
+    color: #cfe0c3;
+    text-align: center;
+}
+.cards{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.card{
+    box-shadow: 10px 5px 5px black;
+    color: #1f363d;
+}
+.template{
+    width: 100%;
+}
+.container h2{
+    color: #cfe0c3;
+    text-align: center;
+}
+.bg-custom, .card-body{
+    background-color: #1f363d;
+}
+.btn-custom{
+    background-color: #40798c !important;
+    color: #cfe0c3 !important;
+}
+.fas.fa-heart:hover {
+    color: #f44336 !important;
+  }
+  
+  .fas.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }
+  .navbar{
+      background-color: #40798c !important;
+      color: #cfe0c3 !important;
+  }
+
+.form-control form-control-lg{
+    background-color: #1f363d !important;
+}
+.form-control{
+    background-color: #1f363d !important;
+}
