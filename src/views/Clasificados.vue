@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/style.css">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/scripts/script.js"></script>
-
-    <title>Clasificados</title>
-</head>
-
-<body>
-    <!-- Navbar -->
+<template>
+    <div>
+        <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <!-- Container wrapper -->
         <div class="container-fluid">
@@ -28,32 +13,44 @@
             
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-                    <img src="/img/logo.png" width="120px" alt=""
-                    loading="lazy" />
-                </a>
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="clasificados.html">Clasificados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="comunicados.html">Comunicados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="emprendimientos.html">Emprendimientos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="estadoCuenta.html">Estado de cuenta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+          <!-- Navbar brand -->
+          <router-link class="navbar-brand mt-2 mt-lg-0" to="/"> <img src="@/assets/img/logo.png"
+              width="120px" alt="" loading="lazy">
+          </router-link>
+
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/"
+                >Inicio</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Clasificados"
+                >Clasificados</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Comunicados"
+                >Comunicados</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Emprendimientos"
+                >Emprendimientos</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/EstadoCuenta"
+                >Estado de cuenta</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Contacto"
+                >Contacto</router-link
+              >
+            </li>
+          </ul>
                 <!-- Left links -->
             </div>
             <!-- Collapsible wrapper -->
@@ -105,12 +102,16 @@
     <!-- Navbar -->
     
     <div class="clasificados">
-        <h1>CLASIFICADOS</h1><br> <a href="NuevoClasificado.html"> <button class="btn btn-primary" type="button">Nuevo</button></a>
+        <h1>CLASIFICADOS</h1><br> 
+        <!-- <router-link to="/foo" tag="button">foo</router-link> -->
+        <router-link to="/NuevoClasificado">
+            <button class="btn btn-primary" type="button">Nuevo</button>
+        </router-link>
 
         <div class="cards">
             
             <div class="card" style="width: 18rem;">
-                <img src="/img/anuncio.jpg" class="card-img-top" alt="...">
+                <img src="@/assets/img/anuncio.jpg" class="card-img-top" alt="...">
                 <div class="card-body bg-light">
                     <h5 class="card-title">SE ARRIENDA</h5>
                     <p class="card-text">APARTAMENTO AMOBLADO Apartamenton con Buenos Acabados Cerca de Centros
@@ -119,7 +120,7 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img src="/img/anuncio2.jpg" class="card-img-top" alt="...">
+                    <img src="@/assets/img/anuncio2.jpg" class="card-img-top" alt="...">
                     <div class="card-body bg-light">
                         <h5 class="card-title">SE VENDE</h5>
                         <p class="card-text">Exclusivo diseño con aprovechamiento total de luz y una magnifica vista desde
@@ -129,7 +130,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/img/anuncio.jpg" class="card-img-top" alt="...">
+                <img src="@/assets/img/anuncio.jpg" class="card-img-top" alt="...">
                 <div class="card-body bg-light">
                     <h5 class="card-title">SE ARRIENDA</h5>
                     <p class="card-text">APARTAMENTO AMOBLADO Apartamenton con Buenos Acabados Cerca de Centros
@@ -139,7 +140,7 @@
             </div>
 
             <div class="card" style="width: 18rem;">
-                <img src="/img/anuncio2.jpg" class="card-img-top" alt="...">
+                <img src="@/assets/img/anuncio2.jpg" class="card-img-top" alt="...">
                 <div class="card-body bg-light">
                     <h5 class="card-title">SE VENDE</h5>
                     <p class="card-text">Exclusivo diseño con aprovechamiento total de luz y una magnifica vista desde
@@ -149,7 +150,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/img/anuncio.jpg" class="card-img-top" alt="...">
+                <img src="@/assets/img/anuncio.jpg" class="card-img-top" alt="...">
                 <div class="card-body bg-light">
                     <h5 class="card-title">SE ARRIENDA</h5>
                     <p class="card-text">APARTAMENTO AMOBLADO Apartamenton con Buenos Acabados Cerca de Centros
@@ -158,7 +159,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/img/anuncio2.jpg" class="card-img-top" alt="...">
+                <img src="@/assets/img/anuncio2.jpg" class="card-img-top" alt="...">
                 <div class="card-body bg-light">
                     <h5 class="card-title">SE VENDE</h5>
                     <p class="card-text">Exclusivo diseño con aprovechamiento total de luz y una magnifica vista desde
@@ -169,9 +170,5 @@
             </div>
         </div>
     </div>
-
-
-
-</body>
-
-</html>
+    </div>
+</template>

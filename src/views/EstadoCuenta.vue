@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/scripts/script.js"></script>
-
-    <title>AdministraYapp!</title>
-</head>
-<body>
-    <!-- Navbar -->
+<template>
+    <div>
+        <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <!-- Container wrapper -->
         <div class="container-fluid">
@@ -26,32 +13,44 @@
 
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
-                    <img src="/img/logo.png" width="120px" alt=""
-                        loading="lazy" />
-                </a>
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="clasificados.html">Clasificados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="comunicados.html">Comunicados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="emprendimientos.html">Emprendimientos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="estadoCuenta.html">Estado de cuenta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+          <!-- Navbar brand -->
+          <router-link class="navbar-brand mt-2 mt-lg-0" to="/"> <img src="@/assets/img/logo.png"
+              width="120px" alt="" loading="lazy">
+          </router-link>
+
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/"
+                >Inicio</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Clasificados"
+                >Clasificados</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Comunicados"
+                >Comunicados</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Emprendimientos"
+                >Emprendimientos</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/EstadoCuenta"
+                >Estado de cuenta</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link text-light" to="/Contacto"
+                >Contacto</router-link
+              >
+            </li>
+          </ul>
                 <!-- Left links -->
             </div>
             <!-- Collapsible wrapper -->
@@ -148,7 +147,6 @@
             </tbody>
           </table>
     </div>
-    
-    
-</body>
-</html>
+
+    </div>
+</template>

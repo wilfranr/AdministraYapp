@@ -18,6 +18,5 @@ function formLogin() {
           Login: ${result.value.login}
           Password: ${result.value.password}
         `.trim())
-      })
-    
+      })   
 }
