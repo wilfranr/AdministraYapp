@@ -1,24 +1,7 @@
 <template>
   <div>
-    <section id="header">
-      <div class="logo">
-        <router-link to="/"
-          ><img src="@/assets/img/logo.png" alt="logo" width="120px"
-        /></router-link>
-      </div>
-      <div id="userName">
-        Invitado <img src="@/assets/img/user.svg" alt="user" width="20px" />
-      </div>
-      <div class="login">
-        <router-link to="login">
-          <input
-            class="login-btn"
-            type="button"
-            value="Ingresar"
-          />
-        </router-link>
-      </div>
-    </section>
+    <AppHeader></AppHeader>
+    /section>
     <section id="panel">
       <div class="grid">
         <div>
@@ -60,8 +43,40 @@
 export default {
   setup() {},
 };
-
+function formLogin() {
+  Swal.fire({
+    title: "Iniciar Sesión",
+    html: `<input type="text" id="login" class="swal2-input" placeholder="Usuario">
+        <input type="password" id="password" class="swal2-input" placeholder="Password">`,
+    confirmButtonText: "Ingresar",
+    focusConfirm: false,
+    preConfirm: () => {
+      const login = Swal.getPopup().querySelector("#login").value;
+      const password = Swal.getPopup().querySelector("#password").value;
+      if (!login || !password) {
+        Swal.showValidationMessage(`Por favor ingrese usuario y password`);
+      }
+      return { login: login, password: password };
+    },
+  }).then((result) => {
+    Swal.fire(
+      `
+          Login: ${result.value.login}
+          Password: ${result.value.password}
+        `.trim()
+    );
+  });
+}
 </script>
 
-<style>
-</style>
+<script>
+import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "@/components/AppFooter.vue";
+
+export default {
+  components: {
+    AppHeader,
+    AppFooter,
+  },
+};
+</script>

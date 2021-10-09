@@ -9,7 +9,8 @@ import Emprendimientos from '@/views/Emprendimientos'
 import NuevoClasificado from '@/views/NuevoClasificado'
 import NuevoComunicado from '@/views/NuevoComunicado'
 import NuevoEmprendimiento from '@/views/NuevoEmprendimiento'
-import Login from '@/views/Login'
+import Login from '@/views/auth/Login'
+import Register from '@/views/auth/Register'
 
 Vue.use(Router)
 
@@ -26,6 +27,11 @@ export default new Router({
       path: '/Login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/Register',
+      name: 'register',
+      component: Register
     },
     {
       path: '/Comunicados',
@@ -69,3 +75,4 @@ export default new Router({
     }
   ]
 })
+
