@@ -1,4 +1,3 @@
- 
 <template>
   <div>
     <!-- Navbar -->
@@ -195,7 +194,7 @@
         /> -->
         <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png" @change="previewFiles" class="form-control" id="customFile" />        
         <br/>
-        <img :src="`http://localhost:3000/${notaEditar.image}`" width="120" height="80">        
+        <img :src="`/${notaEditar.image}`" width="120" height="80">        
         <br/>
         <b-button class="btn-warning my-2 mx-2" type="submit">Editar</b-button>
         <b-button class="my-2" type="submit" @click="editar = false">Cancelar</b-button>
@@ -279,7 +278,7 @@
                 <td>{{item.url}}</td>
                 <!-- <td>{{item.image}}</td> -->
                 <td> 
-                  <img :src="'http://localhost:3000/'+item.image" width="120" height="80">
+                  <img :src="`/${item.image}`" width="120" height="80">
                   </td>    
                 <td> 
                     <b-button class="btn-warning btn-sm mx-2 mb-2" height="90%" style="width: 70%;" @click="activarEdicion(item._id)">Editar</b-button>

@@ -5,6 +5,7 @@ import App from './App'
 import './assets/styles/style.css';
 import router from './router/router'
 import store from './store'
+import vuetify from './plugins/vuetify'
 
 import BootstrapVue from 'bootstrap-vue'
 Vue.use(BootstrapVue)
@@ -15,7 +16,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 Vue.use(VueAxios,axios)
-axios.defaults.baseURL = 'http://localhost:3000/'//Url base de nuestra API (servidor)
+//axios.defaults.baseURL = 'http://localhost:3000/'//Url base de nuestra API (servidor)
 
 Vue.config.productionTip = false
 
@@ -24,6 +25,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  vuetify,
   store,
   components: { App },
   template: '<App/>'

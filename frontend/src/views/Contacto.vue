@@ -151,9 +151,9 @@
               <div class="card-body p-3">
                 <!--Body-->
                 <div class="form-group">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
+                  <div>
+                    <div >
+                      <div >
                         <i class="fa fa-user text-secondary m-1"></i>
                       </div>
                     </div>
@@ -168,9 +168,9 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
+                  <div>
+                    <div >
+                      <div >
                         <i class="fa fa-envelope text-secondary m-1"></i>
                       </div>
                     </div>
@@ -185,9 +185,9 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
+                  <div>
+                    <div >
+                      <div >
                         <i class="far fa-building text-secondary m-1"></i>
                       </div>
                     </div>
@@ -205,9 +205,9 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
+                  <div>
+                    <div >
+                      <div >
                         <i class="fas fa-house-user text-secondary m-1"></i>
                       </div>
                     </div>
@@ -221,9 +221,9 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
+                  <div>
+                    <div >
+                      <div >
                         <i class="fa fa-comment text-secondary m-1"></i>
                       </div>
                     </div>
@@ -234,7 +234,7 @@
                     ></textarea>
                   </div>
                 </div>
-
+                <br>
                 <div class="text-center">
                   <input
                     type="submit"

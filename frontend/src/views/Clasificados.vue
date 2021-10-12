@@ -110,7 +110,8 @@
                        
             <div class="cards">
                 <div v-for="(item, index) in notas" :key="index" class="card" style="width: 18rem;">
-                    <img :src="'http://localhost:3000/'+item.image" width="100" height="200" class="card-img-top" alt="...">
+                    <!-- <img :src="'http://localhost:3000/'+item.image" width="100" height="200" class="card-img-top" alt="..."> -->
+                    <v-img :src="`/${item.image}`" width="100%" height="200" class="card-img-top" alt="..."></v-img>
                     <div class="card-body bg-light">
                         <h5 class="card-title">{{item.nombre}}</h5>
                         <p class="card-text">{{item.descripcion.substring(0, 100)+"..."}}</p>
